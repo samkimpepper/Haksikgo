@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="95dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/logo"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_WhereParty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="textView"
+                android:textSize="18sp"
+                android:fontFamily="@font/notosansbold"
+                android:textColor="@color/black"
+                android:includeFontPadding="false"
+                />
+
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="28dp"
+                android:background="@drawable/search" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="460dp"
+        android:background="@drawable/layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/tv_Place1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="textView"
+                android:textSize="20sp"
+                android:fontFamily="@font/notosansregular"
+                android:textColor="@color/black"
+                android:includeFontPadding="false"
+                />
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:divider="#ffffff"
+                android:dividerHeight="4dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/tv_Place2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="textView"
+                android:textSize="20sp"
+                android:fontFamily="@font/notosansregular"
+                android:textColor="@color/black"
+                android:includeFontPadding="false"
+                />
+
+            <ListView
+                android:id="@+id/listView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="#ffffff"
+                android:dividerHeight="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/favbtn_makeparty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="330dp"
+            android:clickable="true"
+            app:backgroundTint="@color/orange"
+            app:srcCompat="@drawable/plus1"
+            app:tint="@android:color/white"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

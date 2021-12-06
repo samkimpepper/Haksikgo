@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainMenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="91dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/logo" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/tv_today_menu"
+                android:orientation="vertical"
+                android:paddingTop="35dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="오늘의 학식"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/notosansbold"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_Today"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/orange"
+                    android:fontFamily="@font/notosansregular"
+                    android:includeFontPadding="false"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_TdMainFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:fontFamily="@font/notosansregular"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_TdSubFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:fontFamily="@font/notosansregular"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tv_today_menu"
+                android:orientation="vertical"
+                android:paddingTop="35dp">
+
+                <TextView
+                    android:id="@+id/tv_Place2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="내일의 학식"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/notosansbold"
+                    android:includeFontPadding="false"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_Tomorrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/orange"
+                    android:fontFamily="@font/notosansregular"
+                    android:includeFontPadding="false"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_TmMainFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:fontFamily="@font/notosansregular"
+                    android:includeFontPadding="false"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_TmSubFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:fontFamily="@font/notosansregular"
+                    android:includeFontPadding="false"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <Button
+            android:id="@+id/btn_InParty"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_main_menu"
+            android:text="학식파티\n구하기"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/notosansbold"
+            android:includeFontPadding="false"
+            />
+
+        <Button
+            android:id="@+id/btn_OutParty"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="0.55"
+            android:background="@drawable/btn_main_menu"
+            android:text="일번가파티\n구하기"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/notosansbold"
+            android:includeFontPadding="false"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f5f5f5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_LiveParty"
+            android:layout_width="137dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="top|left"
+            android:text="실시간 파티"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/notosansbold"
+            android:includeFontPadding="false"
+            />
+
+        <ListView
+            android:id="@+id/lv_LiveParty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:divider="#00000000"
+            android:dividerHeight="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
